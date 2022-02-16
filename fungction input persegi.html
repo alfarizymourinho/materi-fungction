@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menghitung Persegi</title>
+    <script>
+        function hitungpersegi(){
+            var Panjang, Lebar, keliling, Luas;
+
+            Panjang = parseInt(document.getElementById("panjang").value);
+            Lebar = parseInt(document.getElementById("lebar").value);
+            keliling = 2 * (Panjang + Lebar);
+            Luas = Panjang * Lebar;
+            document.getElementById("keliling").value = keliling;
+            document.getElementById("luas").value = Luas;
+        }
+    </script>
+</head>
+<body>
+    <h1>Menghitung Luas dan keliling Persegi</h1>
+    <form>
+        <p>Panjang: <input type="text" id="panjang"></p>
+        <p>Lebar: <input type="text" id="lebar"></p>
+        <p><input type="button" value="Hitung" onclick="hitungpersegi();"></p>
+        <p>Luas: <input type="text" id="luas"></p>
+        <p>keliling: <input type="text" id="keliling"></p>
+    </form>
+</body>
+</html>
+            
