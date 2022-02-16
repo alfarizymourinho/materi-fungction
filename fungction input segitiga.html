@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menghitung Segitiga</title>
+    <script>
+        function hitungsegitiga(){
+            var Alas, Sisi, Tinggi;
+
+            Alas = parseInt(document.getElementById("alas").value);
+            Sisi = parseInt(document.getElementById("sisi").value);
+            Tinggi = parseInt(document.getElementById("tinggi").value);
+            keliling = (Alas*Tinggi) * 0.5;
+            Luas = Sisi+ Sisi +Sisi;
+            document.getElementById("keliling").value = keliling;
+            document.getElementById("luas").value = Luas;
+        }
+    </script>
+</head>
+<body>
+    <h1>Menghitung Luas dan keliling Segitiga</h1>
+    <form>
+        <p>Alas: <input type="text" id="alas"></p>
+        <p>Tinggi: <input type="text" id="tinggi"></p>
+        <p>Sisi: <input type="text" id="sisi"></p>
+        <p><input type="button" value="Hitung" onclick="hitungsegitiga();"></p>
+        <p>Luas: <input type="text" id="luas"></p>
+        <p>keliling: <input type="text" id="keliling"></p>
+    </form>
+</body>
+</html>
+            
